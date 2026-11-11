@@ -10,21 +10,21 @@
         *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
         :root {
-            --bg-primary: #0a0a0f;
-            --bg-secondary: #12121a;
-            --bg-card: #16161f;
-            --bg-card-hover: #1c1c28;
-            --border: #232333;
-            --text-primary: #e8e8ed;
-            --text-secondary: #9494a8;
-            --text-muted: #6a6a80;
-            --accent: #6366f1;
-            --accent-light: #818cf8;
+            --bg-primary: #faf6ec;
+            --bg-secondary: #f3ecdc;
+            --bg-card: #ffffff;
+            --bg-card-hover: #fffcf5;
+            --border: #e6dcc6;
+            --text-primary: #1f1a14;
+            --text-secondary: #554c40;
+            --text-muted: #7d7365;
+            --accent: #4f46e5;
+            --accent-light: #4338ca;
             --accent-glow: rgba(99, 102, 241, 0.15);
-            --green: #22c55e;
+            --green: #15803d;
             --green-glow: rgba(34, 197, 94, 0.15);
-            --orange: #f59e0b;
-            --cyan: #06b6d4;
+            --orange: #b45309;
+            --cyan: #0e7490;
         }
 
         html { scroll-behavior: smooth; }
@@ -54,7 +54,7 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            background: rgba(10, 10, 15, 0.8);
+            background: rgba(250, 246, 236, 0.85);
             backdrop-filter: blur(20px);
             border-bottom: 1px solid var(--border);
         }
@@ -360,7 +360,7 @@
 
         .skill-tag {
             padding: 0.3rem 0.7rem;
-            background: rgba(255,255,255,0.04);
+            background: rgba(120,90,40,0.04);
             border: 1px solid var(--border);
             border-radius: 6px;
             font-size: 0.75rem;
@@ -532,13 +532,13 @@
         }
 
         .project-badge.hf {
-            background: rgba(255, 213, 0, 0.1);
-            color: #ffd500;
+            background: rgba(255, 213, 0, 0.15);
+            color: #a16207;
             border: 1px solid rgba(255, 213, 0, 0.2);
         }
 
         .project-badge.gh {
-            background: rgba(255,255,255,0.06);
+            background: rgba(120,90,40,0.06);
             color: var(--text-secondary);
             border: 1px solid var(--border);
         }
@@ -592,7 +592,7 @@
             font-family: 'JetBrains Mono', monospace;
             font-size: 0.7rem;
             padding: 0.25rem 0.6rem;
-            background: rgba(255,255,255,0.04);
+            background: rgba(120,90,40,0.04);
             border: 1px solid var(--border);
             border-radius: 5px;
             color: var(--text-muted);
@@ -908,105 +908,113 @@ I don't prototype - I ship. With an M.Tech from NIT Goa and a peer-reviewed publ
 <section id="skills" class="fade-in">
     <div class="section-label">// skills</div>
     <h2 class="section-title">Technical Arsenal</h2>
-    <p class="section-desc">The tools and technologies I use to bring AI research from paper to production across finance and healthcare.</p>
+    <p class="section-desc">The stack behind my projects, from pretraining MedBharat-1 and OrthoX-AI to shipping Credit Line Assistant, DataLens and NiftyMind.</p>
     <div class="skills-grid">
         <div class="skill-card">
             <div class="skill-card-header">
                 <div class="skill-icon purple">&#9881;</div>
-                <h3>ML & Deep Learning</h3>
+                <h3>Languages &amp; Frameworks</h3>
             </div>
             <div class="skill-tags">
-                <span class="skill-tag">PyTorch</span>
-                <span class="skill-tag">TensorFlow</span>
-                <span class="skill-tag">Scikit-learn</span>
-                <span class="skill-tag">HuggingFace</span>
-                <span class="skill-tag">ONNX</span>
-                <span class="skill-tag">Transfer Learning</span>
-                <span class="skill-tag">Feature Engineering</span>
-                <span class="skill-tag">Ablation Studies</span>
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">TypeScript</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">SQL</span>
+                <span class="skill-tag">FastAPI</span>
+                <span class="skill-tag">Next.js</span>
+                <span class="skill-tag">Tailwind CSS</span>
+                <span class="skill-tag">Streamlit</span>
+                <span class="skill-tag">SQLAlchemy</span>
+                <span class="skill-tag">Prisma</span>
             </div>
         </div>
         <div class="skill-card">
             <div class="skill-card-header">
                 <div class="skill-icon green">&#9733;</div>
-                <h3>GenAI & LLMs</h3>
+                <h3>GenAI &amp; Agentic AI</h3>
             </div>
             <div class="skill-tags">
-                <span class="skill-tag">Transformers</span>
-                <span class="skill-tag">MoE</span>
-                <span class="skill-tag">Fine-tuning</span>
-                <span class="skill-tag">RAG</span>
-                <span class="skill-tag">FAISS</span>
+                <span class="skill-tag">LLMs (Llama 3.3 · GPT-4 · Gemini)</span>
+                <span class="skill-tag">LangGraph</span>
                 <span class="skill-tag">LangChain</span>
+                <span class="skill-tag">Anthropic Tool Use</span>
+                <span class="skill-tag">Groq</span>
+                <span class="skill-tag">RAG</span>
+                <span class="skill-tag">Re-ranking</span>
                 <span class="skill-tag">Prompt Engineering</span>
-                <span class="skill-tag">BPE Tokenizer</span>
-                <span class="skill-tag">FinBERT</span>
-                <span class="skill-tag">Document Intelligence</span>
+                <span class="skill-tag">LoRA Fine-tuning</span>
+                <span class="skill-tag">Web Speech API</span>
             </div>
         </div>
         <div class="skill-card">
             <div class="skill-card-header">
                 <div class="skill-icon cyan">&#9677;</div>
-                <h3>Financial NLP & Statistical Modelling</h3>
+                <h3>Retrieval &amp; Data</h3>
             </div>
             <div class="skill-tags">
-                <span class="skill-tag">Earnings Call Summarisation</span>
-                <span class="skill-tag">SEC/Regulatory Document Q&A</span>
-                <span class="skill-tag">Domain Adaptation</span>
-                <span class="skill-tag">Time-Series Modelling</span>
-                <span class="skill-tag">Risk Analysis</span>
-                <span class="skill-tag">Factor-Based Feature Eng.</span>
-                <span class="skill-tag">Alpha Generation</span>
-                <span class="skill-tag">Anomaly Detection</span>
-                <span class="skill-tag">statsmodels</span>
-            </div>
-        </div>
-        <div class="skill-card">
-            <div class="skill-card-header">
-                <div class="skill-icon orange">&#9729;</div>
-                <h3>Cloud & MLOps</h3>
-            </div>
-            <div class="skill-tags">
-                <span class="skill-tag">GCP</span>
-                <span class="skill-tag">AWS</span>
-                <span class="skill-tag">Cloud Run</span>
-                <span class="skill-tag">Vertex AI</span>
-                <span class="skill-tag">Docker</span>
-                <span class="skill-tag">CI/CD</span>
-                <span class="skill-tag">REST APIs</span>
-                <span class="skill-tag">Flask</span>
-                <span class="skill-tag">Streamlit</span>
-                <span class="skill-tag">Airflow</span>
+                <span class="skill-tag">ChromaDB</span>
+                <span class="skill-tag">MongoDB Atlas Vector</span>
+                <span class="skill-tag">FAISS</span>
+                <span class="skill-tag">BM25</span>
+                <span class="skill-tag">OpenAI Embeddings</span>
+                <span class="skill-tag">DuckDB</span>
+                <span class="skill-tag">PostgreSQL</span>
+                <span class="skill-tag">SQLite</span>
+                <span class="skill-tag">Plotly</span>
             </div>
         </div>
         <div class="skill-card">
             <div class="skill-card-header">
                 <div class="skill-icon purple">&#9878;</div>
-                <h3>NLP & Computer Vision</h3>
+                <h3>Deep Learning, Pretraining &amp; Vision</h3>
             </div>
             <div class="skill-tags">
-                <span class="skill-tag">Text Classification</span>
-                <span class="skill-tag">Tokenization</span>
-                <span class="skill-tag">ResNet / CNNs</span>
+                <span class="skill-tag">PyTorch</span>
+                <span class="skill-tag">Mixture of Experts (MoE)</span>
+                <span class="skill-tag">RoPE</span>
+                <span class="skill-tag">SwiGLU</span>
+                <span class="skill-tag">BPE Tokenizer</span>
+                <span class="skill-tag">Curriculum Learning</span>
+                <span class="skill-tag">Transfer Learning</span>
+                <span class="skill-tag">ONNX</span>
+                <span class="skill-tag">ResNet-50</span>
                 <span class="skill-tag">OpenCV</span>
-                <span class="skill-tag">Medical Imaging</span>
                 <span class="skill-tag">DICOM</span>
+                <span class="skill-tag">Angle Regression</span>
                 <span class="skill-tag">Image Segmentation</span>
+                <span class="skill-tag">Medical Imaging</span>
+            </div>
+        </div>
+        <div class="skill-card">
+            <div class="skill-card-header">
+                <div class="skill-icon cyan">&#9776;</div>
+                <h3>Cloud &amp; MLOps</h3>
+            </div>
+            <div class="skill-tags">
+                <span class="skill-tag">GCP Cloud Run</span>
+                <span class="skill-tag">Cloud Build</span>
+                <span class="skill-tag">Vertex AI</span>
+                <span class="skill-tag">Oracle Cloud</span>
+                <span class="skill-tag">AWS</span>
+                <span class="skill-tag">Docker</span>
+                <span class="skill-tag">CI/CD</span>
+                <span class="skill-tag">MLflow</span>
             </div>
         </div>
         <div class="skill-card">
             <div class="skill-card-header">
                 <div class="skill-icon green">&#9873;</div>
-                <h3>AI Governance & Responsible AI</h3>
+                <h3>Fintech &amp; Responsible AI</h3>
             </div>
             <div class="skill-tags">
-                <span class="skill-tag">Model Auditability</span>
-                <span class="skill-tag">Reproducibility</span>
-                <span class="skill-tag">Explainability</span>
+                <span class="skill-tag">Credit Appraisal Memo (CAM)</span>
+                <span class="skill-tag">Policy Rule Engines</span>
+                <span class="skill-tag">Geofenced Audit Trails</span>
+                <span class="skill-tag">Upstox API</span>
+                <span class="skill-tag">Time-Series</span>
                 <span class="skill-tag">Ground-Truth Validation</span>
-                <span class="skill-tag">MAS</span>
-                <span class="skill-tag">RBI</span>
-                <span class="skill-tag">HKMA</span>
+                <span class="skill-tag">Explainability (SHAP/LIME)</span>
+                <span class="skill-tag">Model Auditability</span>
             </div>
         </div>
     </div>
@@ -1268,19 +1276,19 @@ I don't prototype - I ship. With an M.Tech from NIT Goa and a peer-reviewed publ
 
         <!-- Key results grid -->
         <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 0.75rem; margin-bottom: 1.4rem;">
-            <div style="background: rgba(255,255,255,0.03); border: 1px solid var(--border); border-radius: 10px; padding: 0.9rem 1rem; text-align: center;">
+            <div style="background: rgba(120,90,40,0.03); border: 1px solid var(--border); border-radius: 10px; padding: 0.9rem 1rem; text-align: center;">
                 <div style="font-size: 1.4rem; font-weight: 700; color: var(--green); letter-spacing: -0.5px;">&gt;90%</div>
                 <div style="font-size: 0.7rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.8px; margin-top: 0.2rem;">Classification Accuracy</div>
             </div>
-            <div style="background: rgba(255,255,255,0.03); border: 1px solid var(--border); border-radius: 10px; padding: 0.9rem 1rem; text-align: center;">
+            <div style="background: rgba(120,90,40,0.03); border: 1px solid var(--border); border-radius: 10px; padding: 0.9rem 1rem; text-align: center;">
                 <div style="font-size: 1.4rem; font-weight: 700; color: var(--accent-light); letter-spacing: -0.5px;">~5°</div>
                 <div style="font-size: 0.7rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.8px; margin-top: 0.2rem;">Mean Angle Error (MAE)</div>
             </div>
-            <div style="background: rgba(255,255,255,0.03); border: 1px solid var(--border); border-radius: 10px; padding: 0.9rem 1rem; text-align: center;">
+            <div style="background: rgba(120,90,40,0.03); border: 1px solid var(--border); border-radius: 10px; padding: 0.9rem 1rem; text-align: center;">
                 <div style="font-size: 1.4rem; font-weight: 700; color: var(--orange); letter-spacing: -0.5px;">2,000+</div>
                 <div style="font-size: 0.7rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.8px; margin-top: 0.2rem;">Annotated X-rays</div>
             </div>
-            <div style="background: rgba(255,255,255,0.03); border: 1px solid var(--border); border-radius: 10px; padding: 0.9rem 1rem; text-align: center;">
+            <div style="background: rgba(120,90,40,0.03); border: 1px solid var(--border); border-radius: 10px; padding: 0.9rem 1rem; text-align: center;">
                 <div style="font-size: 1.4rem; font-weight: 700; color: var(--cyan); letter-spacing: -0.5px;">8</div>
                 <div style="font-size: 0.7rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.8px; margin-top: 0.2rem;">Clinical Angles Predicted</div>
             </div>
@@ -1293,11 +1301,11 @@ I don't prototype - I ship. With an M.Tech from NIT Goa and a peer-reviewed publ
             <span class="pub-tag" style="background: rgba(6,182,212,0.08); border-color: rgba(6,182,212,0.2); color: var(--cyan);">ONNX-Deployable</span>
             <span class="pub-tag" style="background: rgba(245,158,11,0.08); border-color: rgba(245,158,11,0.2); color: var(--orange);">Clinically Validated</span>
             <div style="margin-left: auto; display: flex; flex-wrap: wrap; gap: 0.35rem;">
-                <span style="font-family: 'JetBrains Mono', monospace; font-size: 0.68rem; padding: 0.2rem 0.55rem; background: rgba(255,255,255,0.04); border: 1px solid var(--border); border-radius: 5px; color: var(--text-muted);">Lower Limb Deformity</span>
-                <span style="font-family: 'JetBrains Mono', monospace; font-size: 0.68rem; padding: 0.2rem 0.55rem; background: rgba(255,255,255,0.04); border: 1px solid var(--border); border-radius: 5px; color: var(--text-muted);">Anatomical Angle Prediction</span>
-                <span style="font-family: 'JetBrains Mono', monospace; font-size: 0.68rem; padding: 0.2rem 0.55rem; background: rgba(255,255,255,0.04); border: 1px solid var(--border); border-radius: 5px; color: var(--text-muted);">Rule-Based Classification</span>
-                <span style="font-family: 'JetBrains Mono', monospace; font-size: 0.68rem; padding: 0.2rem 0.55rem; background: rgba(255,255,255,0.04); border: 1px solid var(--border); border-radius: 5px; color: var(--text-muted);">ResNet-50 Regression</span>
-                <span style="font-family: 'JetBrains Mono', monospace; font-size: 0.68rem; padding: 0.2rem 0.55rem; background: rgba(255,255,255,0.04); border: 1px solid var(--border); border-radius: 5px; color: var(--text-muted);">Malalignment Test (MAT)</span>
+                <span style="font-family: 'JetBrains Mono', monospace; font-size: 0.68rem; padding: 0.2rem 0.55rem; background: rgba(120,90,40,0.04); border: 1px solid var(--border); border-radius: 5px; color: var(--text-muted);">Lower Limb Deformity</span>
+                <span style="font-family: 'JetBrains Mono', monospace; font-size: 0.68rem; padding: 0.2rem 0.55rem; background: rgba(120,90,40,0.04); border: 1px solid var(--border); border-radius: 5px; color: var(--text-muted);">Anatomical Angle Prediction</span>
+                <span style="font-family: 'JetBrains Mono', monospace; font-size: 0.68rem; padding: 0.2rem 0.55rem; background: rgba(120,90,40,0.04); border: 1px solid var(--border); border-radius: 5px; color: var(--text-muted);">Rule-Based Classification</span>
+                <span style="font-family: 'JetBrains Mono', monospace; font-size: 0.68rem; padding: 0.2rem 0.55rem; background: rgba(120,90,40,0.04); border: 1px solid var(--border); border-radius: 5px; color: var(--text-muted);">ResNet-50 Regression</span>
+                <span style="font-family: 'JetBrains Mono', monospace; font-size: 0.68rem; padding: 0.2rem 0.55rem; background: rgba(120,90,40,0.04); border: 1px solid var(--border); border-radius: 5px; color: var(--text-muted);">Malalignment Test (MAT)</span>
             </div>
         </div>
     </div>
