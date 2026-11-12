@@ -12,19 +12,19 @@
         :root {
             --bg-primary: #faf6ec;
             --bg-secondary: #f3ecdc;
-            --bg-card: #ffffff;
-            --bg-card-hover: #fffcf5;
+            --bg-card: #fffaf0;
+            --bg-card-hover: #fdf3e1;
             --border: #e6dcc6;
-            --text-primary: #1f1a14;
-            --text-secondary: #554c40;
+            --text-primary: #2b1d12;
+            --text-secondary: #5a4332;
             --text-muted: #7d7365;
-            --accent: #4f46e5;
-            --accent-light: #4338ca;
-            --accent-glow: rgba(99, 102, 241, 0.15);
+            --accent: #7a4a26;
+            --accent-light: #5c3517;
+            --accent-glow: rgba(122, 74, 38, 0.15);
             --green: #15803d;
             --green-glow: rgba(34, 197, 94, 0.15);
             --orange: #b45309;
-            --cyan: #0e7490;
+            --cyan: #a0703c;
         }
 
         html { scroll-behavior: smooth; }
@@ -120,7 +120,7 @@
             left: -100px;
             width: 400px;
             height: 400px;
-            background: radial-gradient(circle, rgba(6, 182, 212, 0.08) 0%, transparent 70%);
+            background: radial-gradient(circle, rgba(160, 112, 60, 0.08) 0%, transparent 70%);
             pointer-events: none;
         }
 
@@ -210,7 +210,7 @@
         .hero-link.primary:hover {
             background: var(--accent-light);
             transform: translateY(-1px);
-            box-shadow: 0 8px 30px rgba(99, 102, 241, 0.3);
+            box-shadow: 0 8px 30px rgba(122, 74, 38, 0.3);
         }
 
         .hero-link.secondary {
@@ -321,7 +321,7 @@
             border-color: var(--accent);
             background: var(--bg-card-hover);
             transform: translateY(-2px);
-            box-shadow: 0 8px 40px rgba(99, 102, 241, 0.08);
+            box-shadow: 0 8px 40px rgba(122, 74, 38, 0.08);
         }
 
         .skill-card-header {
@@ -342,9 +342,9 @@
             flex-shrink: 0;
         }
 
-        .skill-icon.purple { background: rgba(99, 102, 241, 0.15); color: var(--accent-light); }
+        .skill-icon.purple { background: rgba(122, 74, 38, 0.15); color: var(--accent-light); }
         .skill-icon.green { background: rgba(34, 197, 94, 0.15); color: var(--green); }
-        .skill-icon.cyan { background: rgba(6, 182, 212, 0.15); color: var(--cyan); }
+        .skill-icon.cyan { background: rgba(160, 112, 60, 0.15); color: var(--cyan); }
         .skill-icon.orange { background: rgba(245, 158, 11, 0.15); color: var(--orange); }
 
         .skill-card h3 {
@@ -505,7 +505,7 @@
         .project-card:hover {
             border-color: var(--accent);
             transform: translateY(-3px);
-            box-shadow: 0 12px 50px rgba(99, 102, 241, 0.1);
+            box-shadow: 0 12px 50px rgba(122, 74, 38, 0.1);
         }
 
         .project-card:hover::before { opacity: 1; }
@@ -729,7 +729,7 @@
         .contact-card:hover {
             border-color: var(--accent);
             transform: translateY(-2px);
-            box-shadow: 0 8px 30px rgba(99, 102, 241, 0.1);
+            box-shadow: 0 8px 30px rgba(122, 74, 38, 0.1);
         }
 
         .contact-card svg { width: 18px; height: 18px; color: var(--accent-light); flex-shrink: 0; }
@@ -798,12 +798,12 @@
         <svg viewBox="0 0 120 40" xmlns="http://www.w3.org/2000/svg">
             <defs>
                 <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                    <stop offset="0%" style="stop-color:#818cf8"/>
-                    <stop offset="100%" style="stop-color:#06b6d4"/>
+                    <stop offset="0%" style="stop-color:#a0703c"/>
+                    <stop offset="100%" style="stop-color:#c49a6c"/>
                 </linearGradient>
                 <linearGradient id="nodeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                    <stop offset="0%" style="stop-color:#6366f1"/>
-                    <stop offset="100%" style="stop-color:#06b6d4"/>
+                    <stop offset="0%" style="stop-color:#7a4a26"/>
+                    <stop offset="100%" style="stop-color:#c49a6c"/>
                 </linearGradient>
             </defs>
             <!-- Neural network nodes - representing AI/ML -->
@@ -1126,7 +1126,7 @@ I don't prototype - I ship. With an M.Tech from NIT Goa and a peer-reviewed publ
                 <h3>DataLens</h3>
                 <div style="display: flex; gap: 0.4rem;">
                     <span class="project-badge gh">GitHub</span>
-                    <span class="project-badge" style="background: rgba(6,182,212,0.1); color: var(--cyan); border: 1px solid rgba(6,182,212,0.2); font-family: 'JetBrains Mono', monospace; font-size: 0.7rem; padding: 0.25rem 0.6rem; border-radius: 6px; white-space: nowrap;">Data Agent</span>
+                    <span class="project-badge" style="background: rgba(160, 112, 60,0.1); color: var(--cyan); border: 1px solid rgba(160, 112, 60,0.2); font-family: 'JetBrains Mono', monospace; font-size: 0.7rem; padding: 0.25rem 0.6rem; border-radius: 6px; white-space: nowrap;">Data Agent</span>
                 </div>
             </div>
             <p class="project-desc">
@@ -1252,7 +1252,7 @@ I don't prototype - I ship. With an M.Tech from NIT Goa and a peer-reviewed publ
                 <div class="pub-venue">MICAD 2025 &middot; International Conference on Medical Imaging &amp; Computer-Aided Diagnosis &middot; Springer LNEE vol. 1520</div>
                 <div class="pub-title">OrthoX-AI: Automated X-Ray Alignment and Correction System [Ilizarov Technique]</div>
             </div>
-            <a href="https://doi.org/10.1007/978-981-95-7425-4_18" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 0.45rem; padding: 0.5rem 1rem; background: var(--accent-glow); border: 1px solid rgba(99,102,241,0.35); border-radius: 8px; text-decoration: none; color: var(--accent-light); font-size: 0.78rem; font-family: 'JetBrains Mono', monospace; white-space: nowrap; transition: all 0.2s; flex-shrink: 0;" onmouseover="this.style.background='rgba(99,102,241,0.25)'" onmouseout="this.style.background='var(--accent-glow)'">
+            <a href="https://doi.org/10.1007/978-981-95-7425-4_18" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 0.45rem; padding: 0.5rem 1rem; background: var(--accent-glow); border: 1px solid rgba(122, 74, 38,0.35); border-radius: 8px; text-decoration: none; color: var(--accent-light); font-size: 0.78rem; font-family: 'JetBrains Mono', monospace; white-space: nowrap; transition: all 0.2s; flex-shrink: 0;" onmouseover="this.style.background='rgba(122, 74, 38,0.25)'" onmouseout="this.style.background='var(--accent-glow)'">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" width="14" height="14"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"/></svg>
                 DOI &rarr; Springer
             </a>
@@ -1298,7 +1298,7 @@ I don't prototype - I ship. With an M.Tech from NIT Goa and a peer-reviewed publ
         <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem;">
             <span class="pub-tag" style="background: rgba(16,185,129,0.08); border-color: rgba(16,185,129,0.25); color: var(--green);">Published</span>
             <span class="pub-tag">Peer-Reviewed · Springer LNEE</span>
-            <span class="pub-tag" style="background: rgba(6,182,212,0.08); border-color: rgba(6,182,212,0.2); color: var(--cyan);">ONNX-Deployable</span>
+            <span class="pub-tag" style="background: rgba(160, 112, 60,0.08); border-color: rgba(160, 112, 60,0.2); color: var(--cyan);">ONNX-Deployable</span>
             <span class="pub-tag" style="background: rgba(245,158,11,0.08); border-color: rgba(245,158,11,0.2); color: var(--orange);">Clinically Validated</span>
             <div style="margin-left: auto; display: flex; flex-wrap: wrap; gap: 0.35rem;">
                 <span style="font-family: 'JetBrains Mono', monospace; font-size: 0.68rem; padding: 0.2rem 0.55rem; background: rgba(120,90,40,0.04); border: 1px solid var(--border); border-radius: 5px; color: var(--text-muted);">Lower Limb Deformity</span>
