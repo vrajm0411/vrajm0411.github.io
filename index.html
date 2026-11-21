@@ -1090,13 +1090,13 @@ I don't prototype - I ship. With an M.Tech from NIT Goa and a peer-reviewed publ
                 <span class="project-badge gh">GitHub</span>
             </div>
             <p class="project-desc">
-                Research platform for NSE stock forecasting that tests 15 models against naive baselines with walk-forward backtests and Diebold-Mariano significance tests. Includes a live limit-order-book recorder and predictor built from 12 market-microstructure papers.
+                Most stock-prediction projects show off an accuracy number. I wanted to know something harder: does any model actually beat doing nothing? So I built a backtesting lab for Indian equities where every model has to earn its place against a naive baseline, on data it has never seen.
             </p>
             <ul class="project-highlights">
-                <li>15 models compared on the same expanding walk-forward splits: Ridge, gradient-boosted trees, TFT, PatchTST, TFT-GNN, LSTM, SARIMA/ETS and a gated fusion of experts</li>
-                <li>Leak-free features from Upstox prices, Screener.in fundamentals (used only once public) and GDELT news tone</li>
-                <li>Found volatility is predictable (RandomForest beats the 21-day baseline, p = 0.026) while next-day direction is not</li>
-                <li>Live 5-level order book over the Upstox WebSocket, with order-flow features and Up/Flat/Down predictions every update</li>
+                <li>Pitted classical statistics, gradient-boosted trees and transformers (TFT, PatchTST, graph attention) against "predict zero" and "tomorrow looks like today"</li>
+                <li>The answer: the size of tomorrow's move can be forecast (RandomForest wins, p = 0.026), but its direction stayed a coin flip for every model</li>
+                <li>No peeking at the future: earnings count only once they were public, and news only from the day before</li>
+                <li>Added a live order-book reader that streams NSE market depth and calls the next few seconds Up, Flat or Down</li>
             </ul>
             <div class="project-stack">
                 <span>Python</span>
